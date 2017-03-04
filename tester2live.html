@@ -1,0 +1,101 @@
+<html>
+        <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <style>
+h1{font-size: 1.5em;}
+                        .sample{
+                                background-color: lightcyan;
+                                white-space: pre-line;
+                        }
+                        .bahaidate2{
+                                background-color: lightgreen;
+                        }
+                        </style>
+                </head>
+<body>
+<h1>Susan Gammage</h1>
+<div class="sample">12 Jul 2015 / 19 Rahmat 172</div>
+
+<div class="bahai_date">  
+ <script language="JavaScript1.2" src="olddate.js"></script>
+ <script language="JavaScript1.2" src="http://www3.telus.net/avlittle/badiDateToday/BadiDateToday.v1.js"></script>
+ <script language="JavaScript1.2" type="text/javascript"> 
+// Gregorian date
+var currentDate = new Date();
+var currentDay = currentDate.getDate();
+var currentYear = currentDate.getFullYear();
+var d = new BahaiDateV1(); 
+var d2 = new BahaiDate();
+// Gregorian months
+var month = new Array(12);
+month[0] = "Jan";
+month[1] = "Feb";
+month[2] = "Mar";
+month[3] = "Apr";
+month[4] = "May";
+month[5] = "Jun";
+month[6] = "Jul";
+month[7] = "Aug";
+month[8] = "Sep";
+month[9] = "Oct";
+month[10] = "Nov";
+month[11] = "Dec"; 
+</script>   
+<script language="JavaScript1.2" type="text/javascript"> 
+                                    document.write("<div id='bahaidate'>");
+                                    document.write(currentDay + " " + month[currentDate.getMonth()] + " " + currentYear + " / "); // Gregorian date
+                                    document.write(d.day + " " + d.monthName() + " " + d.year); // Baha'i date
+                                    document.write("</div>"); 
+
+                                    document.write("<div class='bahaidate2'>");
+                                    document.write(currentDay + " " + month[currentDate.getMonth()] + " " + currentYear + " / "); // Gregorian date
+                                    document.write(d2.day + " " + d2.monthName() + " " + d2.year); // Baha'i date
+                                    document.write("</div>"); 
+
+</script> 
+</div>
+
+<h1>The Baha'i Community of New Hampshire</h1>
+<div class=sample>Jalál of Rahmat, 172 BE, (172/6/19)</div>
+<script type="text/javascript">
+        document.write(d.dayName() + ' of ' + d.monthName() + ', ' + d.year + ' BE, (' + d.year + '/' + d.month + '/' + d.day + ')')
+        document.write("<div class='bahaidate2'>");
+        document.write(d2.dayName() + ' of ' + d2.monthName() + ', ' + d2.year + ' BE, (' + d2.year + '/' + d2.month + '/' + d2.day + ')')
+        document.write("</div>"); 
+
+        </script>
+        
+<h1>95 Prayers; Baha'i Studies</h1>
+<div class=sample>'Alá' of Rahmat, Bahai Era 172 , 19 / 6 / 172</div>
+<script type="text/javascript">
+var d = new BahaiDateV1()
+document.write(d.dayName() + ' of ' + d.monthName() + ', ' + ' Bahai Era ' + d.year + ' , ' + d.day + ' / ' + d.month + ' / ' + d.year )
+        document.write("<div class='bahaidate2'>");
+document.write(d2.dayName() + ' of ' + d2.monthName() + ', ' + ' Bahai Era ' + d2.year + ' , ' + d2.day + ' / ' + d2.month + ' / ' + d2.year )
+        document.write("</div>"); 
+
+</script>        
+
+<h1>Middleton</h1>
+<div class=sample>19 Rahmat, 172 BE    [ 172/6/19 ]</div>
+<script type="text/javascript">
+		document.write(d.day + " " + d.monthName() + ", " + d.year + " BE &nbsp;&nbsp;&nbsp;" + "[ " + d.year + "/" + d.month + "/" + d.day + " ]")
+        document.write("<div class='bahaidate2'>");
+		document.write(d2.day + " " + d2.monthName() + ", " + d2.year + " BE &nbsp;&nbsp;&nbsp;" + "[ " + d2.year + "/" + d2.month + "/" + d2.day + " ]")
+        document.write("</div>"); 
+
+		</script>
+<h1>Badi Date</h1>
+<div class=bahaidate2>
+   <div id=test1></div>
+</div>
+<script>
+var d3 = BadiDateToday({
+    locationMethod: BadiDateLocationChoice.guessUserLocation,
+    onReady: function(di){
+       document.getElementById('test1').innerText = '{bDay} {bMonthNameAr} - {nearestSunset}'.filledWith(di);
+    }
+});
+</script>
+</body>
+</html>

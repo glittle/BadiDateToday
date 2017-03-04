@@ -63,7 +63,7 @@ var BadiDateLocationChoice = {
 }
 
 var BadiDateToday = function (settings) {
-    var version = 'v1.09';
+    var version = 'v1.08';
     var localSettings = {};
     applySettings(settings);
 
@@ -112,7 +112,7 @@ var BadiDateToday = function (settings) {
         fr: {
             "bYearInVahidMeaning": { "message": ",A,B,Père,D,Porte,V,Éternité,Générosité,Splendeur,Amour,Délice,Réponse,Unique,Bienfaisant,Affection,Commencement,Lumineux,Le Plus Lumineux,Unité", "description": "Vahid names, with leading , " },
             "bMonthMeaning": { "message": "Jours Intercalaires,Splendeur,Gloire,Beauté,Grandeur,Lumière,Miséricorde,Paroles,Perfection,Noms,Puissance,Volonté,Connaissance,Pouvoir,Discours,Questions,Honneur,Souveraineté,Empire,Élévation", "description": "Names of days/months, with first one being Ayyam-i-ha" },
-            "bWeekdayMeaning": { "message": ",Gloire,Beauté,Perfection,Grâce,Justice,Majesté,Indépendance", "description": "start with Saturday" },
+            "bWeekDayMeaning": { "message": ",Gloire,Beauté,Perfection,Grâce,Justice,Majesté,Indépendance", "description": "start with Saturday" },
             "gWeekdayLong": { "message": "Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi", "description": "start with Sunday" },
             "gWeekdayShort": { "message": "Dim,Lun,Mar,Mer,Jeu,Ven,Sam", "description": "start with Sun" },
             "gMonthLong": { "message": "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre", "description": "" },
@@ -138,7 +138,7 @@ var BadiDateToday = function (settings) {
         pt_PT: {
             "bYearInVahidMeaning": { "message": ",A,B,Pai,D,Porta,V,Eternidade,Generosidade,Esplendor,Amor,Deleite,Resposta,Único,Caridoso,Afecto,Início,Luminosidade,Mais Luminoso,Unidade", "description": "Nome Vahid começados por... " },
             "bMonthMeaning": { "message": "Dias Intercalares,Esplendor,Glória,Beleza,Grandeza,Luz,Misericórdia,Palavras,Perfeição,Nomes,Potência,Vontade,Conhecimento,Poder,Discurso,Perguntas,Honra,Soberania,Domínio,Sublimidade", "description": "Nomes dos dias/meses após Ayyam-i-ha" },
-            "bWeekdayMeaning": { "message": ",Glória,Beleza,Perfeição,Graça,Justiça,Majestade,Independência", "description": "Inicia-se no Sábado" },
+            "bWeekDayMeaning": { "message": ",Glória,Beleza,Perfeição,Graça,Justiça,Majestade,Independência", "description": "Inicia-se no Sábado" },
             "gWeekdayLong": { "message": "Domingo,Segunda-feira,Terça-feira,Quarta-feira,Quinta-feira,Sexta-feira,Sábado", "description": "Inicia-se no Domingo" },
             "gWeekdayShort": { "message": "Dom,Seg,Ter,Qua,Qui,Sex,Sab", "description": "Inicia-se no Dom" },
             "gMonthLong": { "message": "Janeiro,Fevereiro,Março,Abril,Maio,Junho,Julho,Agosto,Setembro,Outubo,Novembro,Dezembro", "description": "" },
